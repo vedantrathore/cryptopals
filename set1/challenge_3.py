@@ -1,4 +1,6 @@
 def score_alphatext(txt):
+    # if len(txt) == 0:
+    #     return
     scr = filter(lambda x: 'a' <= x <= 'z' or 'A' <= x <= 'Z' or x == ' ', txt)
     return float(len(scr)) / len(txt)
 
